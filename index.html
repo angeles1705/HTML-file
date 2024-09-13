@@ -2,33 +2,45 @@
 <html lang="es">
     <head>
         <title>Mi página web</title>
+        <link rel="stylesheet" href="reset.css" />
+        <link rel="stylesheet" href="./estilo.css" />
     </head>
     <body>
+        
         <header>
-            <h1>Mi página web</h1>
-                <span>HOME</span>
-                <span>NOTICIAS</span>
-                <span>CLIMA</span>
+            <div id="titulos">
+                <h1 class="title" id="principal" > Mi página web</h1>
+           </div>
+        
+        <div id="cards-container">
+            <span>HOME</span>
+            <span>NOTICIAS</span>
+            <span>CLIMA</span>
+        </div>
+            
         </header>
          
-         <main>
-            <img src="Logo_Noticias_Argentinas.jpg"/>
+         <main>            
+            
             <section>
-                <h2> Titulo de una sección de noticias</h2>
-
+                <article class="cards">
+                    <h2 class="title">Sección de noticias</h2>
+                    <img src="Logo_Noticias_Argentinas.jpg" class="logo"/>
+                </article>
+                 
                 <article>
                     
-                    <h3>Noticia N°1</h3>
+                    <h3 class="title"> Noticia N°1</h3>
                     <div>
-                        <p>Primer parrafo de mi noticia</p>
+                        <p>Parrafo de mi noticia</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, neque. Explicabo iusto corporis accusantium, commodi numquam adipisci minima nobis quae quasi distinctio voluptas facere quam cumque sunt nisi architecto accusamus.</p>     
                     </div>
         
                     
                 </article>
-                <hr />
+              
                 <article>
-                    <h3>Titulo de noticia N°2</h3>
+                    <h3 class="title">Titulo de noticia N°2</h3>
                     <p>Listado de cosas importantes para noticia</p>    
         
                     <ol>
@@ -37,9 +49,9 @@
                         <li> Elemento C</li>
                     </ol>
                 </article>
-                <hr />
+             
                 <article>
-                    <h3> Noticia N°3</h3>
+                    <h3 class="title"> Noticia N°3</h3>
                     <p>Listado de cosas importantes para esta noticia</p>
 
                     <ul>
